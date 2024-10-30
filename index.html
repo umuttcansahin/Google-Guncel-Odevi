@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        a, img {
+            text-decoration: none;
+        }
+
+        header {
+            background-color: #f8f8f8;
+            padding: 10px 20px;
+        }
+
+        header nav {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            font-size: 13px;
+            gap: 15px;
+        }
+
+        section {
+            flex-grow: 1;
+            margin-top: 150px;
+            text-align: center;
+        }
+
+        .search-container {
+            position: relative;
+            display: inline-block;
+        }
+
+        input[type="text"] {
+            border-radius: 24px;
+            height: 40px;
+            padding: 10px 10px 10px 40px;
+            width: 600px;
+            border: 1px solid #ccc;
+        }
+
+        .search-icon {
+            position: absolute;
+            top: 50%;
+            left: 10px;
+            transform: translateY(-50%);
+            pointer-events: none;
+        }
+        .keyboard-icon {
+            position: absolute;
+            top: 50%;
+            right: 50px;
+            transform: translateY(-50%);
+            pointer-events: none;
+        }
+        .mic-icon {
+            position: absolute;
+            top: 50%;
+            right: 10px;
+            transform: translateY(-50%);
+            pointer-events: none;
+        }
+
+        input[type="submit"] {
+            border-radius: 24px;
+            padding: 10px 20px;
+            margin: 10px;
+        }
+
+        footer {
+            background-color: #f2f2f2;
+            padding: 10px 20px;
+        }
+
+        footer nav {
+            display: flex;
+            justify-content: space-between;
+            font-size: 12px;
+        }
+
+        ul {
+            list-style-type: none;
+            display: flex;
+            gap: 15px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#" target="_blank">Gmail</a>
+            <a href="#" target="_blank">Görseller</a>
+            <img src="images/menu-dots.png" alt="Google Apps" width="24">
+            <img src="images/account.png" alt="Google Account" width="32" style="border-radius: 50%;">
+        </nav>
+    </header>
+    <section>
+        <img src="images/Google_2015_logo.svg.png" alt="Google" width="220px">
+        <form action="https://www.google.com/search" method="get">
+            <div class="search-container">
+                <img class="search-icon" src="images/search-icon.png" alt="Search Icon" width="20px">
+                <input type="text" name="q" placeholder="Google'da Ara">
+                <img class="keyboard-icon" src="images/keyboard-icon.png" alt="Keyboard Icon" width="20px">
+                <img class="mic-icon" src="images/mic-icon.png" alt="Microphone Icon" width="20px">
+            </div>
+            <br>
+            <input type="submit" value="Google'da Ara">
+            <input type="submit" value="Kendimi Şanslı Hissediyorum">
+        </form>
+    </section>
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="https://about.google/?utm_source=google-TR&utm_medium=referral&utm_campaign=hp-footer&fg=1" target="_blank">Hakkımızda</a></li>
+                <li><a href="https://ads.google.com/intl/tr_tr/home/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1" target="_blank">Reklam</a></li>
+                <li><a href="https://smallbusiness.withgoogle.com/intl/tr_tr/?subid=tr-tr-et-g-awa-a-g_hpbfoot1_1!o2&utm_source=google&utm_medium=ep&utm_campaign=google_hpbfooter&utm_content=google_hpbfooter&gmbsrc=tr-tr-et-gs-z-gmb-s-z-u~sb-g4sb_srvcs-u#!/" target="_blank">İşletme</a></li>
+                <li><a href="https://www.google.com/search/howsearchworks/?fg=1" target="_blank">Arama nasıl çalışır?</a></li>
+            </ul>
+            <ul>
+                <li><a href="https://sustainability.google" target="_blank">İklimle ilgili çalışmalarımızın üçüncü on yılı</a></li>
+            </ul>
+            <ul>
+                <li><a href="https://policies.google.com/privacy?hl=tr&fg=1" target="_blank">Gizlilik</a></li>
+                <li><a href="https://policies.google.com/terms?hl=tr&fg=1" target="_blank">Şartlar</a></li>
+                <li><a href="#" target="_blank">Ayarlar</a></li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+</html>
